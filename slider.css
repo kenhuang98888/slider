@@ -1,0 +1,82 @@
+div {
+	box-sizing: border-box;
+}
+
+.slider {
+	font-family: verdana;
+	position: relative;
+	display: inline-block;
+}
+.slider-bg {
+	position: relative;
+	width: 280px;
+	padding: 40px 0;
+}
+.slider-line {
+	position: absolute;
+	width: 230px;
+	border-top: solid 2px #c0c0c0;
+	top: 50px;
+	left: 25px;
+}
+.slider-dec, .slider-inc {
+	width: 20px;
+	height: 20px;
+	border: solid 2px #c0c0c0;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 14px;
+	color: #0099CC	;
+}
+.slider-dec {
+	float: left;
+}
+.slider-inc {
+	float: right;
+}
+.pointer-container {
+	position: absolute;
+	font-size: 12px;
+	top: 0px;
+	left: 25px;
+}
+.slider .label {
+	width: 40px;
+	height: 30px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+	background-color: #000000;
+	color:#ffffff;
+	margin-left: -5px;
+	position: relative;	
+}
+.slider .label::after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #000000;
+	top: 30px;
+	left: 15px;
+}
+.slider .pointer {
+	width: 30px;
+	height: 30px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 30px;
+	background-color: #0099CC;
+	color:#ffffff;
+	margin-top: 7px;
+	cursor: pointer;
+}
+
